@@ -24,5 +24,7 @@ streamlit run mniststreamlit.py
 
 ### 3、训练
 
-浏览器打开http://192.168.124.5:8501
+浏览器打开http://127.0.0.1:8501
+
+![输入图片说明](start.png)
 
