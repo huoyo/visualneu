@@ -28,3 +28,4 @@ streamlit run mniststreamlit.py
 
 ![输入图片说明](start.png)
 
+![输入图片说明](model.png)
