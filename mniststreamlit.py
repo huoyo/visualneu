@@ -93,7 +93,7 @@ if __name__ == '__main__':
         with st.expander("查看模型"):
             components.html(ndraw.render(model,init_x=200, flow=ndraw.VERTICAL), height=1000, scrolling=True)
         model.compile(loss="categorical_crossentropy", optimizer=tf.keras.optimizers.Adam(lr=0.001),metrics=["accuracy"])
-        model.fit(x_train, y_train, batch_size=128, validation_data=(x_test, y_test), epochs=500, verbose=1,callbacks=[TrainCallback(x_test, y_test)])
+        model.fit(x_train, y_train, batch_size=128, validation_data=(x_test, y_test), epochs=10, verbose=1,callbacks=[TrainCallback(x_test, y_test)])
         st.success('训练结束')
 
     if st.sidebar.button('停止'):
